@@ -30,7 +30,7 @@
 1. Clone the Task-Manager [GitHub repository](https://github.com/TihomirDenev/Task-Manager) locally:
 
 ```bash
-https://github.com/TihomirDenev/Angular.git
+https://github.com/TihomirDenev/Task-Manager.git
 ```
 
 2. Navigate to the project directory:
