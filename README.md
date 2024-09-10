@@ -1,6 +1,6 @@
 <h2 align="center">
   Welcome to Task Manager <br/>
-  <a href="" target="_blank">Task Manager</a>
+  <a href="https://github.com/TihomirDenev/Task-Manager" target="_blank">Task Manager</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="assets/.png" height="350" />
@@ -27,16 +27,16 @@
 
 # 🛠 Getting Started
 
-1. Clone the [GitHub repository]() locally:
+1. Clone the Task-Manager [GitHub repository](https://github.com/TihomirDenev/Task-Manager) locally:
 
 ```bash
-git clone https://github.com/
+https://github.com/TihomirDenev/Angular.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd 
+cd task-manager
 ```
 
 3. To run the project, use the following command:
@@ -48,14 +48,17 @@ npm start
 4. Open localhost link in browser to view web-platform.
 
 # 🗜 Usage
-
+- Use this application to manage tasks efficiently within an enterprise environment. You can add, view, and complete tasks using the user-friendly interface provided.
 
 # 📋 Code Structure
-
+- ***app/:*** Contains all the components and services used in the application.
+- ***header/:*** Displays the application header.
+- ***tasks/:*** Manages all task-related components.
+- ***user/:*** Handles user information and selection.
 
 # 🎮 Contributing
 
-- Feel free to fork this repository and make a pull request if you have any improvements or bug fixes.
+- Feel free to fork this repository and make a pull request if you have any improvements or bug fixes. We appreciate community contributions that help improve the application's functionality and usability.
 
 # 📲 Information and Deployment
 
