@@ -60,8 +60,6 @@ npm start
 
 - Feel free to fork this repository and make a pull request if you have any improvements or bug fixes.
 
-# 📲 Information and Deployment
-
 
 # ⚖ License
 
