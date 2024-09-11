@@ -3,7 +3,7 @@
   <a href="https://github.com/TihomirDenev/Task-Manager" target="_blank">Task Manager</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="assets/.png" height="350" />
+  <img alt="Demo" src="assets/demo.png" height="350" />
 </div>
 
 # <img src="https://firebasestorage.googleapis.com/v0/b/dare2fit-f6eb4.appspot.com/o/assets%2FREADME-images%2Fcommunity.png?alt=media&token=893ecd6f-908b-4c1e-9223-25d82f1bb8b1&_gl=1*watnuy*_ga*MjExMzk5MTA5MC4xNjgzMjcwMjg1*_ga_CW55HF8NVT*MTY4NjU3Njg5Ni4xMDMuMS4xNjg2NTc3OTI1LjAuMC4w"  width="30" height="30"> Description
@@ -58,7 +58,7 @@ npm start
 
 # 🎮 Contributing
 
-- Feel free to fork this repository and make a pull request if you have any improvements or bug fixes. We appreciate community contributions that help improve the application's functionality and usability.
+- Feel free to fork this repository and make a pull request if you have any improvements or bug fixes.
 
 # 📲 Information and Deployment
 
