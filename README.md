@@ -39,13 +39,19 @@ https://github.com/TihomirDenev/Task-Manager.git
 cd task-manager
 ```
 
-3. To run the project, use the following command:
+3. Install Dependencies Before running the project, you need to install the necessary npm packages. Run the following command in the terminal:
+
+```bash
+npm install
+```
+
+4. To run the project, use the following command:
 
 ```bash
 npm start
 ```
 
-4. Open localhost link in browser to view web-platform.
+5. Open localhost link in browser to view web-platform.
 
 # 🗜 Usage
 
