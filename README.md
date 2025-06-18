@@ -1,73 +1,111 @@
-<h2 align="center">
-  Welcome to Task Manager <br/>
-  <a href="https://github.com/TihomirDenev/Task-Manager" target="_blank">Check it out on GitHub</a>
-</h2>
-<div align="center">
-<img src="src/assets/TaskManager.png" alt="Demo" style="border: 2px solid; height: 350px;" />
-</div>
+# 📋 Task Manager
 
-# 📝 Description
+A simple Angular-based task management application that allows users to create, view, and delete tasks. Built with Angular 18 and TypeScript.
 
-- Task Manager allows users to manage their tasks efficiently with a user-friendly interface. Users can view tasks assigned to them, add new tasks, and mark tasks as complete. The application is structured to support enterprise needs, providing seamless management of user tasks without any friction.
+![Task Manager Demo](src/assets/TaskManager.png)
 
-# 🗃️ Technologies Used
+## 🚀 Live Demo
 
-- **_Angular 18:_** For building a responsive and dynamic single-page application.
-- **_TypeScript:_** To ensure type safety and scalable application development.
-- **_CSS:_** For custom styling and responsive design.
-  <br /><br />
+[View the application](https://github.com/TihomirDenev/Task-Manager)
 
-# 💡 Features
+## ✨ Features
 
-- **_User Management:_** Handle multiple users and their associated tasks.
-- **_Dynamic Task Creation:_** Add and manage tasks with due dates and summaries.
-- **_Real-time Updates:_** Instantly see changes and updates to tasks without reloading the page.
-- **_Responsive Design:_** Works seamlessly across various devices and screen sizes.
-  <br /><br />
+- **User Selection**: Choose from 6 predefined users to manage their tasks
+- **Task Management**: Create, view, and delete tasks for selected users
+- **Task Details**: Each task includes title, summary, and due date
+- **Local Storage**: Tasks are persisted in browser's localStorage
+- **Responsive Design**: Works seamlessly across different screen sizes
+- **Real-time Updates**: Changes are reflected immediately without page reload
 
-# ✅ Getting Started
+## 🛠️ Technologies Used
 
-1. Clone the Task-Manager [GitHub repository](https://github.com/TihomirDenev/Task-Manager) locally:
+- **Angular 18**: Modern Angular framework with latest features
+- **TypeScript**: Type-safe JavaScript development
+- **CSS**: Custom styling and responsive design
+- **Local Storage**: Client-side data persistence
 
-```bash
-https://github.com/TihomirDenev/Task-Manager.git
+## 📦 Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/TihomirDenev/Task-Manager.git
+   ```
+
+2. **Navigate to the project directory**
+
+   ```bash
+   cd Task-Manager
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+
+   ```bash
+   npm start
+   ```
+
+5. **Open your browser**
+   Navigate to `http://localhost:4200` to view the application
+
+## 🎯 How to Use
+
+1. **Select a User**: Click on any user from the list to view their tasks
+2. **View Tasks**: See all tasks assigned to the selected user
+3. **Add New Task**: Use the "Add Task" button to create a new task with title, summary, and due date
+4. **Delete Tasks**: Remove tasks by clicking the delete button on individual task cards
+
+## 📁 Project Structure
+
+```
+src/app/
+├── app.component.*         # Main application component
+├── dummy-users.ts          # Predefined user data
+├── header/                 # Application header component
+├── shared/                 # Shared components (card)
+├── tasks/                  # Task-related components
+│   ├── new-task/           # Task creation component
+│   ├── task/               # Individual task component
+│   ├── tasks.component.*   # Task list component
+│   └── tasks.service.ts    # Task management service
+└── user/                   # User selection component
 ```
 
-2. Navigate to the project directory:
+## 📝 Data Structure
 
-```bash
-cd task-manager
+### User Model
+
+```typescript
+interface User {
+  id: string;
+  name: string;
+  avatar: string;
+}
 ```
 
-3. Install Dependencies Before running the project, you need to install the necessary npm packages. Run the following command in the terminal:
+### Task Model
 
-```bash
-npm install
+```typescript
+interface Task {
+  id: string;
+  userId: string;
+  title: string;
+  summary: string;
+  dueDate: string;
+}
 ```
 
-4. To run the project, use the following command:
+## 📄 License
 
-```bash
-npm start
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-5. Open localhost link in browser to view web-platform.
+## 🙏 Acknowledgments
 
-# ⚙️ Usage
-
-- Use this application to manage tasks efficiently within an enterprise environment. You can add, view, and complete tasks using the user-friendly interface provided.
-
-# 📋 Code Structure
-
-- **_app/:_** Contains all the components and services used in the application.
-- **_header/:_** Displays the application header.
-- **_tasks/:_** Manages all task-related components.
-- **_user/:_** Handles user information and selection.
-
-# ✨ Contributing
-
-- Feel free to fork this repository and make a pull request if you have any improvements or bug fixes.
-
-# 📇 License
-
-- This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+- Built with Angular 18
+- Icons and styling created for this project
+- User avatars are placeholder images
