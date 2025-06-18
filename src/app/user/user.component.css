@@ -11,6 +11,8 @@ button {
   width: 100%;
   min-width: 10rem;
   text-align: left;
+  transition: all 0.2s ease;
+  border-radius: 6px;
 }
 
 button:hover,
@@ -18,13 +20,17 @@ button:active,
 .active {
   background-color: #9965dd;
   color: #150722;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(153, 101, 221, 0.3);
 }
 
 img {
   width: 2rem;
-  object-fit: contain;
+  height: 2rem;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
 }
 
 span {
@@ -32,4 +38,59 @@ span {
   padding: 0;
   font-size: 0.8rem;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+  button {
+    min-width: 8rem;
+    padding: 0.5rem 0.75rem;
+    /* Better touch target size */
+    min-height: 44px;
+  }
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  span {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  button {
+    min-width: 7rem;
+    padding: 0.4rem 0.6rem;
+    gap: 0.4rem;
+  }
+
+  img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  button:active {
+    transform: scale(0.98);
+    background-color: #9965dd;
+    color: #150722;
+  }
 }

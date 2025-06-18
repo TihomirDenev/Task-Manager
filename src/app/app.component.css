@@ -14,6 +14,29 @@ main {
   display: flex;
   gap: 0.5rem;
   overflow: auto;
+  /* Mobile-first: horizontal scroll for users */
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #9965dd #433352;
+}
+
+/* Custom scrollbar for webkit browsers */
+#users::-webkit-scrollbar {
+  height: 6px;
+}
+
+#users::-webkit-scrollbar-track {
+  background: #433352;
+  border-radius: 3px;
+}
+
+#users::-webkit-scrollbar-thumb {
+  background: #9965dd;
+  border-radius: 3px;
+}
+
+#users::-webkit-scrollbar-thumb:hover {
+  background: #b47de8;
 }
 
 #fallback {
@@ -21,8 +44,11 @@ main {
   font-size: 1.15rem;
   margin: 0;
   text-align: center;
+  padding: 2rem;
+  color: #433352;
 }
 
+/* Tablet and larger screens */
 @media (min-width: 768px) {
   main {
     margin: 4rem auto;
@@ -31,10 +57,55 @@ main {
 
   #users {
     flex-direction: column;
+    overflow: visible;
+    flex-wrap: wrap;
   }
 
   #fallback {
     font-size: 1.5rem;
     text-align: left;
+  }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 767px) {
+  main {
+    width: 95%;
+    margin: 1.5rem auto;
+    gap: 1.5rem;
+  }
+
+  #users {
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    /* Ensure smooth scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #users li {
+    flex-shrink: 0;
+    min-width: 120px;
+  }
+
+  #fallback {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  main {
+    width: 98%;
+    margin: 1rem auto;
+    gap: 1rem;
+  }
+
+  #users {
+    gap: 0.5rem;
+  }
+
+  #users li {
+    min-width: 100px;
   }
 }
