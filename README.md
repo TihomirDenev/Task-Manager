@@ -6,7 +6,7 @@ A simple Angular-based task management application that allows users to create, 
 
 ## 🚀 Live Demo
 
-[View the application](https://github.com/TihomirDenev/Task-Manager)
+[View the application](https://task-manager-five-kohl.vercel.app/)
 
 ## ✨ Features
 
